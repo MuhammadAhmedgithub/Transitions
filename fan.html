@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAN</title>
+    <link rel="shortcut icon" href="fan-removebg-preview.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: teal;  
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        img {
+            height: 400px;
+            width: 400px;
+            object-fit: contain;
+        }
+        nav {
+            margin-bottom: 40px;
+            width: 100%;
+            text-align: center;
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+        }
+        nav a {
+            display: inline-block;
+            background-color: greenyellow;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            width: 30%;
+        }
+        nav a:hover {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a target="_blank" href="index.html">DICE</a>
+        <a target="_blank" href="bulb.html">BULB</a>
+        <a target="_blank" href="car.html">CAR</a>
+    </nav>
+    <br>
+    <br>
+
+      <center>
+    <img src="fan-removebg-preview.png" alt="FAn" onclick="handleClick(this)">
+      </center>
+
+
+    <script>
+        function handleClick(fan){
+            fan.style.transform = 'rotate(5000deg)';
+            fan.style.transitionDuration= '15s';
+        }
+    </script>
+    
+</body>
+</html>

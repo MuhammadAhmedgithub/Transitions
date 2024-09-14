@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR</title>
+    <link rel="shortcut icon" href="car3.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: cadetblue;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        
+        }
+      
+        #main-image{
+            height: auto;
+            width: 800px;
+           
+        }
+        nav {
+            margin-bottom: 40px;
+            width: 100%;
+            text-align: center;
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+        }
+        nav a {
+            display: inline-block;
+            background-color: greenyellow;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            width: 30%;
+        }
+        nav a:hover {
+            background-color: lightgreen;
+        }
+   
+    </style>
+</head>
+<body>
+    <nav>
+        <a target="_blank" href="index.html">Dice</a>
+        <a target="_blank" href="fan.html">FAN</a>
+        <a target="_blank" href="bulb.html">BULB</a>
+        
+    </nav>
+    <marquee behavior="scroll" direction="right" scrollamount=68>
+        <img id="main-image" src="car1.png" alt="image1">
+    </marquee> 
+    
+
+    <script>
+        var num = 1;
+        function showImage() {
+            num++;
+            if (num>6){
+                num =1;
+            }
+        
+        var imageFormats ={
+            1: 'car1.png',
+            2: 'car2.png',
+            3: 'car3.png',
+            4: 'car4.png',
+            5: 'car5.png',
+            6: 'car6.png',
+        }
+        document.getElementById('main-image').src = imageFormats[num];
+    }
+    
+    setInterval(showImage, 3155);
+    </script>
+    
+</body>
+</html>

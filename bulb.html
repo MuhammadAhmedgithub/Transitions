@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULB</title>
+    <link rel="shortcut icon" href="https://www.freeiconspng.com/thumbs/lightbulb-png/light-bulb-png-bulb-png1247-12.png" type="image/x-icon">
+
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: teal;
+        }
+        nav {
+            margin-bottom: 40px;
+            width: 100%;
+            text-align: center;
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+        }
+        nav a {
+            display: inline-block;
+            background-color: greenyellow;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 5px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+            width: 30%;
+        }
+        nav a:hover {
+            background-color: lightgreen;
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <a target="_blank" href="index.html">Dice</a>
+        <a target="_blank" href="fan.html">FAN</a>
+        <a target="_blank" href="car.html">Car</a>
+    </nav>
+    <center>
+   <img src="https://i.pinimg.com/originals/3f/cb/04/3fcb04b9204ae407de4ee0f85bd90dc6.png" alt="bulb" onclick="handleClick(this)"> 
+    </center>
+
+    <script>
+        var activeBlub ="https://i.pinimg.com/originals/3f/cb/04/3fcb04b9204ae407de4ee0f85bd90dc6.png"
+
+        function handleClick(ahmed) {
+            if(ahmed.src == activeBlub) {
+                ahmed.src = "https://www.freeiconspng.com/thumbs/lightbulb-png/light-bulb-png-bulb-png1247-12.png"
+            }
+            else (ahmed.src = activeBlub)
+        }
+    </script>
+</body>
+</html>
